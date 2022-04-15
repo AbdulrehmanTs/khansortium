@@ -7,7 +7,7 @@ const Blog = () => {
   const { title } = useParams();
 
   const blog = Blogs.find(data => data.title === title)
-  const { banner, heading, heading2, subHeadings, date, intro, sections, referencedFrom } = blog
+  const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom } = blog
   return (
     <section>
       <div className="news_banner">
@@ -38,13 +38,30 @@ const Blog = () => {
           {subHeadings &&
             subHeadings.map((item, index) => {
               return (
-                <div key={index}>
-                  <h4>{item.heading}</h4>
+                < >
+                  <h4 key={index} >{item.heading}</h4>
                   <p>{item.text}</p>
                   <br />
-                </div>
+                </>
               );
             })}
+          {
+            subHeadingsWithTitle?.title && (
+              <>
+                <p>{subHeadingsWithTitle.title}</p>
+                <br />
+              </>
+            ) &&
+            subHeadingsWithTitle?.subHeadings.map((item, index) => {
+              return (
+                < >
+                  <h4 key={index} >{item.heading}</h4>
+                  <p>{item.text}</p>
+                  <br />
+                </>
+              );
+            })
+          }
           {heading2 && (
             <h2
               className="news_heading"
@@ -60,7 +77,7 @@ const Blog = () => {
             return (
               <div key={index} className="news_text_img_right">
                 <div className="news_text_half">
-                  <h4>{item.heading}</h4>
+                  <h4>{item.heading && item.heading}</h4>
                   <br />
                   <p>{item.text}</p>
                 </div>
@@ -83,7 +100,7 @@ const Blog = () => {
                   />
                 </div>
                 <div className="news_text_half">
-                  <h4>{item.heading}</h4>
+                  <h4>{item.heading && item.heading}</h4>
                   <br />
                   <p>{item.text}</p>
                 </div>
