@@ -46,12 +46,15 @@ const Blog = () => {
               );
             })}
           {
-            subHeadingsWithTitle?.title && (
+            subHeadingsWithTitle.title && (
               <>
-                <p>{subHeadingsWithTitle.title}</p>
+                <br />
+                <br />
+                <h3>{subHeadingsWithTitle.title}</h3>
                 <br />
               </>
-            ) &&
+            )}
+          {
             subHeadingsWithTitle?.subHeadings.map((item, index) => {
               return (
                 < >
