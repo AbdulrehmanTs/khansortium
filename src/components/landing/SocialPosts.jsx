@@ -30,22 +30,25 @@ const SocialPosts = ({ bhaistatichnmeto }) => {
          }
              )
          
-      },[]) */
+    //   },[]) */
+    // wholesale: 112441500397309
+    // gammavr: 195944074660833
     useEffect(() => {
-        axios.get(`https://graph.facebook.com/v13.0/1503176633322440/feed?access_token=${process.env.REACT_APP_PMS_KEY}&pretty=0&fields=full_picture%2Cpermalink_url%2Cactions%2Ccreated_time%2Cfrom%2Cicon&limit=4&after=QVFIUm1maVdFRHJqR0w5cUQxLWR1WkZAXb25vRnZAabk5XblFySnI4TU43dFhPd2F2OUNXUUxzNktjejdKUzcwYWVrQVFxaEdkZAUF3amE4ZAmZAUdDBVN0g2eWFIdGg1cFJDQ2ltT0kwYlNfRlRWOUh2V0RwM3hPWlZApY2xwdHA2ZAFdwV2Jt`)
+        axios.get(`https://graph.facebook.com/v13.0/112441500397309/feed?access_token=${process.env.REACT_APP_PMS_KEY}&pretty=0&fields=full_picture%2Cpermalink_url%2Cactions%2Ccreated_time%2Cfrom%2Cicon&limit=3&after=QVFIUm1maVdFRHJqR0w5cUQxLWR1WkZAXb25vRnZAabk5XblFySnI4TU43dFhPd2F2OUNXUUxzNktjejdKUzcwYWVrQVFxaEdkZAUF3amE4ZAmZAUdDBVN0g2eWFIdGg1cFJDQ2ltT0kwYlNfRlRWOUh2V0RwM3hPWlZApY2xwdHA2ZAFdwV2Jt`)
+            // axios.get(`https://graph.facebook.com/v13.0/112441500397309/feed?access_token=${process.env.REACT_APP_PMS_KEY}&pretty=0&fields=created_time%2Cfull_picture%2Cfrom%2Cpermalink_url%2Cactions&limit=25&after=QVFIUlp5OHVRQnY1RHZADMUZAEUlgwb2pVNEJwMWxYVllraXhFX0MwMS1WRHZArUVIzOXMyQzBSTzk1OHpWbllQVW4xSUdiWFJIZAEdwcEViNk9saXdLalZASUlJvbC15dTBJalp0QmJ0WG1YUkR0VlJud3hxZA1R1cHpIbG1xSG5QVkNLLXRO`)
             .then(res => {
                 let newData = [...data, ...res.data.data]
-                // setData(newData)
+                setData(newData)
                 console.log(newData); //results here
 
             }
             )
-        // axios.get(`https://graph.facebook.com/110313754738269/feed?limit=4&fields=permalink_url&access_token=${process.env.REACT_APP_API_KEY}`)
-        //     .then(res => {
-        //         let newData = [...data, ...res.data.data]
-        //         setGammaData(newData)
-        //     }
-        //     )
+        axios.get(`https://graph.facebook.com/v13.0/195944074660833/feed?access_token=${process.env.REACT_APP_PMS_KEY}&pretty=0&fields=full_picture%2Cpermalink_url%2Cactions%2Ccreated_time%2Cfrom%2Cicon&limit=3&after=QVFIUm1maVdFRHJqR0w5cUQxLWR1WkZAXb25vRnZAabk5XblFySnI4TU43dFhPd2F2OUNXUUxzNktjejdKUzcwYWVrQVFxaEdkZAUF3amE4ZAmZAUdDBVN0g2eWFIdGg1cFJDQ2ltT0kwYlNfRlRWOUh2V0RwM3hPWlZApY2xwdHA2ZAFdwV2Jt`)
+            .then(res => {
+                let newData = [...data, ...res.data.data]
+                setGammaData(newData)
+            }
+            )
 
     }, [])
 
@@ -99,8 +102,8 @@ const SocialPosts = ({ bhaistatichnmeto }) => {
             <div className="Social_Posts_Container">
 
                 {
-                    posts.map(post =>
-                        <Suspense key={post} fallback={<div>Loading...</div>}>
+                    [...data, ...gammaData]?.map(post =>
+                        <Suspense key={post.id} fallback={<div>Loading...</div>}>
                             <FbPost width={width} height={height} src={post} />
 
                         </Suspense>
