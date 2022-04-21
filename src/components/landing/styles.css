@@ -1220,6 +1220,7 @@
 }
 .Grid2 .Grid2CardTwo h1{
 text-transform: capitalize;
+font-size: 1.5rem
 }
 
 .Grid2 .Grid2CardTwo img {
@@ -1238,8 +1239,8 @@ text-transform: capitalize;
 }
 
 .Grid2 .Grid2CardTwo .cardTwoContent {
-  max-width: 400px;
-  width: 70%;
+  /* max-width: 400px; */
+  width: 100%;
   background-color: transparent;
   position: absolute;
   z-index: 5;

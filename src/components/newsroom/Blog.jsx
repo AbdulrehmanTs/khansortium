@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Blogs from "./contents";
+import Blogs from "./BlogContents";
 import { useParams } from "react-router-dom";
 
 const Blog = () => {
@@ -33,8 +33,14 @@ const Blog = () => {
         )}
 
         <div className="news_text">
-          <p> {intro} </p>
-          <br />
+          {
+            intro && <>
+              <p> {intro} </p>
+              <br />
+            </>
+          }
+
+
           {subHeadings &&
             subHeadings.map((item, index) => {
               return (
@@ -46,7 +52,7 @@ const Blog = () => {
               );
             })}
           {
-            subHeadingsWithTitle.title && (
+            subHeadingsWithTitle?.title && (
               <>
                 <br />
                 <br />

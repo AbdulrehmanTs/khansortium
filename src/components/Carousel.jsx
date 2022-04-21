@@ -7,7 +7,7 @@ import "./carousel.css";
 import background from "../assets/blog/blog2/thumbnaill.jpg";
 import background1 from "../../src/assets/blog/blog2/khansortium_blog.jpg";
 import background2 from "../../src/assets/blog/blog3/cricketballslide.webp";
-import Blogs from "./newsroom/contents";
+import Blogs from "./newsroom/BlogContents";
 export default function Carousel1() {
   return (
     <Carousel>

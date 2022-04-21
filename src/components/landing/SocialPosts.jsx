@@ -37,18 +37,10 @@ const SocialPosts = ({ bhaistatichnmeto }) => {
         axios.get(`https://graph.facebook.com/v13.0/111918071264923/feed?access_token=${process.env.REACT_APP_KHANSORTIUM_KEY}&fields=permalink_url,id,full_picture,created_time,from,actions&limit=6`)
             .then(res => {
                 let newData = res.data.data
-
                 setData(newData.slice(0, 6))
-                console.log(data);
 
             }
             )
-        // axios.get(`https://graph.facebook.com/v13.0/195944074660833/feed?access_token=${process.env.REACT_APP_PMS_KEY}&pretty=0&fields=full_picture%2Cpermalink_url%2Cactions%2Ccreated_time%2Cfrom%2Cicon&limit=3&after=QVFIUm1maVdFRHJqR0w5cUQxLWR1WkZAXb25vRnZAabk5XblFySnI4TU43dFhPd2F2OUNXUUxzNktjejdKUzcwYWVrQVFxaEdkZAUF3amE4ZAmZAUdDBVN0g2eWFIdGg1cFJDQ2ltT0kwYlNfRlRWOUh2V0RwM3hPWlZApY2xwdHA2ZAFdwV2Jt`)
-        //     .then(res => {
-        //         let newData = [...data, ...res.data.data]
-        //         setGammaData(newData)
-        //     }
-        //     )
 
     }, [])
 
