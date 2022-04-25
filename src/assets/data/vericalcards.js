@@ -119,7 +119,7 @@ let cards =
             des:'We Are Wireless has marked its name as one of the top-rated cellphone carriers stores in the United States. Its exceptional customer service assists users in evaluating their needs, and pairing them with the right package has made We Are Wireless stand out in the industry. We Are Wireless has won several achievements that made them the best cellphone retailer in the Midwest.'
             ,slogan:'Boost Mobile authorized dealer'
             ,"btn":"See Details",
-            joinBtn:'Join Us Now',
+            joinBtn:'Be A Managing Partner',
             link:'https://wholecellonline.com/whole-cell-online-site/?msg=',
             stores:[
                 {
@@ -209,7 +209,7 @@ let cards =
             des:"We Fix Phones has earned customer's trust in Chicagoland by providing fast and reliable repair services. Our experienced technicians use high-quality parts and stay connected with customers at every step of the repair process."
             ,slogan:'We fix phones, tablets, laptops and computers. '
             ,"btn":"See Details",
-            joinBtn:'Join Us Now',
+            joinBtn:'Be A Managing Partner',
             link:'https://wefixphones.co/',
             stores:[
                 {
