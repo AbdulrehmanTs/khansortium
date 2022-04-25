@@ -147,6 +147,8 @@ const PartnerApplication = () => {
                     </option>
           ))} */}
           <option value="Whole Cell Accessories">Whole Cell Accessories</option>
+          <option value="We Fix Phones">We Fix Phones</option>
+          <option value="We Are Wireless Boost 4.0">We Are Wireless Boost 4.0</option>
           <option value="Gamma VR">Gamma VR</option>
         </TextField>
                 <Grid container spacing={3}>
