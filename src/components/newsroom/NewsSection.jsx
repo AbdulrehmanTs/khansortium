@@ -33,8 +33,8 @@ export default function NewsSection() {
                 {
                     cardContent.map((item, index) => {
                         return (
-                            <div key={index} className='newsBox' style={{ position: 'relative', backgroundColor: '#307fe2' }} >
-                                <p style={{ fontWeight: '100', fontSize: '16px', textTransform: 'uppercase', position: 'absolute', left: '15px', top: '10px', color: '#fff' }} >{item.bage}</p>
+                            <div key={index} className='newsBox' >
+                                <p className='bage' style={{ fontSize: '16px' }} >{item.bage}</p>
                                 <i className={item.icon} style={{ fontSize: '70px', WebkitTextFillColor: 'transparent', WebkitTextStrokeWidth: '2px', WebkitTextStrokeColor: '#fff', color: '#a7a428', marginBottom: '10px', }} ></i>
                                 <p style={{ marginBottom: '10px', fontSize: '30px', fontWeight: "bold", color: '#fff' }}>{item.newsTotal}</p>
                                 <h3 style={{ fontSize: '20px', color: '#fff' }} >{item.heading}</h3>
