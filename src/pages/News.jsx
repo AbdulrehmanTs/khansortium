@@ -4,6 +4,7 @@ import Hero from "../components/newsroom/Hero";
 import Newses from "../components/newsroom/Newses";
 import SocialPosts from "../components/landing/SocialPosts";
 import BlogNews from "../components/newsroom/News";
+import NewsSection from "../components/newsroom/NewsSection";
 
 const News = () => {
   return (
@@ -11,6 +12,7 @@ const News = () => {
       {/* <BlogNews /> */}
       <Hero />
       <Newses />
+      <NewsSection />
       <SocialPosts bhaistatichnmeto />
     </Layout>
   );

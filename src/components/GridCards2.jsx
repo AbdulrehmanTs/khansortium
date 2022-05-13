@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import heraldLogo  from '../assets/logos/herald.jpeg'
+import heraldLogo from '../assets/logos/herald.jpeg'
 import Carousel from "./Carousel";
 const GridCards2 = ({ gridCardContent, GridBadge, children }) => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -63,9 +63,9 @@ const GridCards2 = ({ gridCardContent, GridBadge, children }) => {
       <div className="Grid2CardContainer">
 
         <div className="Grid2Card Grid2CardOne">
-      
+
           <Link to='blog/cricket'></Link>
-      
+
           <div className="cardOneImg">
             <img src={gridCardContent[0].img} alt="" />
           </div>
@@ -80,17 +80,17 @@ const GridCards2 = ({ gridCardContent, GridBadge, children }) => {
                 }
               </p>
             </div>
-              <i className="fa fa-long-arrow-alt-right"></i>
-           
+            <i className="fa fa-long-arrow-alt-right"></i>
+
           </div>
         </div>
 
-           
+
         <div className=" Grid2CardTwo">
-   
-        <Carousel/>
+
+          <Carousel />
         </div>
-          {/* <Link to='/blog/khansortium'></Link>
+        {/* <Link to='/blog/khansortium'></Link>
           <img src={gridCardContent[1]} alt="" />
           <span className="Grid2CardBadge">Blog</span>
           <div className="cardTwoContent" style={{ pointerEvents: 'none' }}>
@@ -108,10 +108,20 @@ const GridCards2 = ({ gridCardContent, GridBadge, children }) => {
            
           <i className="fa fa-long-arrow-alt-right"></i>
         ‏‏‏‏</Link> */}
-     
 
 
-        
+
+
+        <div className="Grid2Card Grid2CardThree">
+          <Link to='business#All'></Link>
+          <span className="Grid2CardBadge">{gridCardContent[2].badge}</span>
+          <div className="cardThreeContent">
+            <i className={gridCardContent[2].icon}></i>
+            <h3>{gridCardContent[2].number}</h3>
+            <span>{gridCardContent[2].span}</span>
+          </div>
+          <i className="fa fa-long-arrow-alt-right"></i>
+        </div>
         <div className="Grid2Card Grid2CardThree">
           <Link to='business#All'></Link>
           <span className="Grid2CardBadge">{gridCardContent[2].badge}</span>
