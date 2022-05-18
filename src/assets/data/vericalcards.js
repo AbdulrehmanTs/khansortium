@@ -8,7 +8,7 @@ import whole_cell_accessories_mob from '../companies/whole_cell_accessories.webp
 import staffing from '../companies/staffing.webp'
 import we_fix_phones from '../companies/repair.webp'
 import crescent_cricket_club from '../companies/crescent_cricket_club.webp'
-import medicalLab from '../companies/167448352-laborant-dropping-sample-in-test-tube-using-micropipette-dressed-in-coverall-chemist-in-modern-labor.webp'
+import medicalLab from '../companies/medical-lab.jpeg'
 import tensor_solution from '../companies/tensor_solutions.webp'
 import bpo from '../companies/bpo.webp'
 import we_are_wireless from '../companies/boost.webp'
