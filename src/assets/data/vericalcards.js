@@ -435,7 +435,7 @@ let cards =
             joinBtn: 'Join Us Now'
         },
         {
-            "id": "Pharmaceutical",
+            "id": "MedicalLab",
             "img": medicalLab
             , "heading": "Lifeline bioscience",
             des: 'Work in Progress'

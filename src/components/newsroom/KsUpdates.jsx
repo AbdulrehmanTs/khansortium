@@ -2,6 +2,8 @@ import React from 'react'
 import GridCards2 from '../GridCards2'
 import { Link } from 'react-router-dom';
 import './styles.css'
+import Blogs from './BlogContents'
+import cards from '../../assets/data/vericalcards';
 
 
 export default function KsUpdates() {
@@ -10,21 +12,21 @@ export default function KsUpdates() {
             bage: 'All Blogs',
             heading: "All blogs",
             icon: "far fa-gem",
-            newsTotal: "10+",
+            newsTotal: Blogs.length,
             link: '/all-blogs'
         },
         {
             bage: "All News",
             heading: "All News",
             icon: "fas fa-book-open",
-            newsTotal: "20+",
+            newsTotal: Blogs.length + 2,
             link: '#Grid2'
         },
         {
             bage: "All verticles",
             heading: "All verticles",
             icon: "fas fa-bookmark",
-            newsTotal: "30+",
+            newsTotal: cards.length + "+",
             link: '/business#Vertical_Cards'
         },
     ];

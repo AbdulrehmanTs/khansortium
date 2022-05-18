@@ -55,7 +55,7 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/business#Pharmaceutical'>
+                            <Link to='/business#MedicalLab'>
                                 Medical Lab
                             </Link>
                         </li>
