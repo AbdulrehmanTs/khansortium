@@ -40,7 +40,7 @@ const NewVerticalFilter = () => {
         "StaffingAndTraining",
         "SoftwareDevelopment",
         "EventVenue",
-        "Pharmaceutical",
+        "Medical Lab",
         "Sports"
     ]
     return (
@@ -225,7 +225,7 @@ const NewVerticalFilter = () => {
                         <g>
                         </g>
                     </svg>
-                    Pharmaceutical
+                    Medical Lab
                 </li>
 
             </ul>

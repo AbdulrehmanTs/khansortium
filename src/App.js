@@ -27,6 +27,7 @@ import KhansortiumBlog from "./components/newsroom/KhansortiumBlog";
 import KhansortiumBlog1 from "./components/newsroom/KhansortiumBlog1";
 import AmericanTwenty20Blog from "./components/newsroom/AmericanTwenty20Blog";
 import Blog from "./components/newsroom/Blog";
+import AllBlogs from "./pages/AllBlogs";
 
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
@@ -110,6 +111,17 @@ function App() {
           }}
         />
         <Route
+          path="/all-blogs"
+          render={() => {
+            if (!location.hash) {
+              setTimeout(() => {
+                window.scrollTo(0, 0);
+              }, 50);
+            }
+            return <AllBlogs key={Math.random() * 100} />;
+          }}
+        />
+        <Route
           path="/contactus"
           render={() => {
             if (!location.hash) {
@@ -164,6 +176,7 @@ function App() {
             <KhansortiumBlog1 />
           </Layout>
         </Route>
+
         <Route path="/blogs/:title">
           <Layout>
             <Blog />

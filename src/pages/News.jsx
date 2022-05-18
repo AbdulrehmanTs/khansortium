@@ -4,7 +4,7 @@ import Hero from "../components/newsroom/Hero";
 import Newses from "../components/newsroom/Newses";
 import SocialPosts from "../components/landing/SocialPosts";
 import BlogNews from "../components/newsroom/News";
-import NewsSection from "../components/newsroom/NewsSection";
+import KsUpdates from "../components/newsroom/KsUpdates";
 
 const News = () => {
   return (
@@ -12,7 +12,7 @@ const News = () => {
       {/* <BlogNews /> */}
       <Hero />
       <Newses />
-      <NewsSection />
+      <KsUpdates />
       <SocialPosts bhaistatichnmeto />
     </Layout>
   );

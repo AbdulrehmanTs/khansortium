@@ -54,7 +54,7 @@ const Nav = () => {
         <>
 
             <div className='dropdownDivider'>
-                <Link to='/business' style={{display:'block'}}>
+                <Link to='/business' style={{ display: 'block' }}>
                     <h3>Business Overview</h3>
                 </Link>
                 <Link to='/business'>
@@ -82,7 +82,7 @@ const Nav = () => {
                     <ul>
                         <li><Link to='/business#StaffingAndTraining'> Staffing & Training </Link> </li>
                         <li><Link to='/business#EventVenue'> Event Venue </Link> </li>
-                        <li><Link to='/business#Pharmaceutical'> Pharmaceutical </Link> </li>
+                        <li><Link to='/business#Pharmaceutical'> Medical Lab </Link> </li>
 
                     </ul>
                     <ul>
@@ -97,8 +97,8 @@ const Nav = () => {
     let communityContent = (
         <>
             <div className='dropdownDivider'>
-                <Link to='/community' style={{display:'block'}}>
-                <h3>Community Overview</h3>
+                <Link to='/community' style={{ display: 'block' }}>
+                    <h3>Community Overview</h3>
                 </Link>
                 <Link to='/community'>
                     <span>Learn More</span>
@@ -226,18 +226,18 @@ const Nav = () => {
                     <li className='listItem hideSmall' /* onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseDown} */><NavLink activeClassName='active' to="/careers">Careers</NavLink></li>
                 </ul>
                 <ul className='navIconList'>
-                        <Link to='/contactus'>
-                    <li className='listItem hideSmall' title='Contact Us'>
+                    <Link to='/contactus'>
+                        <li className='listItem hideSmall' title='Contact Us'>
                             <i className="fa fa-envelope"></i>
-                    </li>
-                        </Link>
+                        </li>
+                    </Link>
 
-                        <Link to='/newsroom'>
-                    <li className='listItem hideSmall' title='WorldWide'>
+                    <Link to='/newsroom'>
+                        <li className='listItem hideSmall' title='WorldWide'>
 
                             <i className="fa fa-globe"></i>
-                    </li>
-                        </Link>
+                        </li>
+                    </Link>
                     {/* <li className='listItem' title='Search'>
                        
                         <i className="fa fa-search"></i>
