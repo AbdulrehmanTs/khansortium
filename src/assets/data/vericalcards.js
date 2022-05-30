@@ -435,13 +435,14 @@ let cards =
             joinBtn: 'Join Us Now'
         },
         {
-            "id": "MedicalLab",
+            "id": "Medical",
             "img": medicalLab
             , "heading": "Lifeline bioscience",
             des: 'Work in Progress'
             , slogan: ''
             , "btn": "See Details",
-            joinBtn: 'Join Us Now'
+            joinBtn: 'Join Us Now',
+            link: 'https://lifelinebiosciences.com/'
         }
     ]
 

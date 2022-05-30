@@ -82,7 +82,7 @@ const Nav = () => {
                     <ul>
                         <li><Link to='/business#StaffingAndTraining'> Staffing & Training </Link> </li>
                         <li><Link to='/business#EventVenue'> Event Venue </Link> </li>
-                        <li><Link to='/business#MedicalLab'> Medical Lab </Link> </li>
+                        <li><Link to='/business#Medical'> Medical </Link> </li>
 
                     </ul>
                     <ul>

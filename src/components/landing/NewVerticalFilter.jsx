@@ -21,11 +21,9 @@ const NewVerticalFilter = () => {
     const onClick = (e) => {
         let listItems = document.querySelectorAll('.new_vertical_filters ul li')
         console.log(listItems)
-        console.log(e.target.innerText)
         listItems.forEach(item => item.classList.contains('active') && item.classList.remove('active'))
         e.target.classList.add('active')
         let text = e.target.getAttribute('data-text')
-        console.log(text)
         let filtered = document.querySelectorAll("#" + text)
         let crds = document.querySelectorAll('.new_vertical_card')
         text === 'All' ? crds.forEach(crd => crd.classList.contains('active') || crd.classList.add('active')) : crds.forEach(crd => crd.classList.remove('active'))
@@ -42,7 +40,7 @@ const NewVerticalFilter = () => {
         "StaffingAndTraining",
         "SoftwareDevelopment",
         "EventVenue",
-        "MedicalLab",
+        "Medical",
         "Sports"
     ]
     return (
