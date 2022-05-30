@@ -225,7 +225,7 @@ const NewVerticalFilter = () => {
                         <g>
                         </g>
                     </svg>
-                    Medical Lab
+                    Medical
                 </li>
 
             </ul>
