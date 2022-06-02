@@ -438,7 +438,7 @@ let cards =
             "id": "Medical",
             "img": medicalLab
             , "heading": "Lifeline bioscience",
-            des: 'Work in Progress'
+            des: 'Providing Excellence In Laboratory Medicine'
             , slogan: ''
             , "btn": "See Details",
             joinBtn: 'Join Us Now',
