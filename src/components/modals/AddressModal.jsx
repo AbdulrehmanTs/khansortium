@@ -2,6 +2,7 @@ import './modal.css'
 // import OwlCarousel from 'react-owl-carousel';
 import Slider from "react-slick";
 import { useEffect } from 'react';
+import Modal from './Modal';
 
 
 const AddressModal = ({stores,heading,startCarousel,setShowModal}) => {  
@@ -57,8 +58,7 @@ const AddressModal = ({stores,heading,startCarousel,setShowModal}) => {
         ]
       };
   return (
-      <div className="modalContainer" id='addressModal'>
-          <div className="modal">
+      <Modal id='addressModal'>
               <h2>{heading} Stores</h2>
              <Slider className='owl-theme'   {...settings}>
                 {stores?.map((store,index)=><div ket={index} className='item'>
@@ -69,37 +69,9 @@ const AddressModal = ({stores,heading,startCarousel,setShowModal}) => {
                 </div>)}
                 
             </Slider> 
-            {/* <div className='ModalAddressess'>
-                <div className="ModalRow">
-                    <div>
-                       <strong> City</strong>
-                    </div>
-                   <div>
-                        <strong>Contact</strong>
-                    </div>
-                     <div>
-                        <strong>Address</strong>
-                    </div>
-
-                </div>
-               {stores?.map(({city,address,contact,link})=> <div className="ModalRow">
-                    <div> 
-                        {city}
-                    </div>
-                    <div> 
-                        {contact}
-                    </div>
-                    <div> 
-                        <a href={link} target='_blank'>
-                            {address}
-                        </a>
-                    </div>
-
-                </div>)}
-            </div> */}
+            
                 <button onClick={closeModal} >Back to Page</button>
-          </div>
-      </div>
+      </Modal> 
   )
 }
 

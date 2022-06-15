@@ -8,24 +8,24 @@ import NewVerticalCards from "../components/landing/NewVerticalCards";
 import { useLocation } from "react-router";
 import BookMarks from "../components/business/BookMarks";
 const BusinessOverView = () => {
-  const {hash} = useLocation()
-  useEffect(()=>{
-  let timer
-  if(hash && hash!== "#Business_Overview" && hash !== "#Business_Details" && hash !== "#Vertical_Cards"){
-      let scrll = window.innerHeight 
-     timer = setTimeout(()=>{
-             window.scrollTo(0,scrll)
-     },60)
-  }
-  },[hash ])
+  const { hash } = useLocation()
+  useEffect(() => {
+    let timer
+    if (hash && hash !== "#Business_Overview" && hash !== "#Business_Details" && hash !== "#Vertical_Cards") {
+      let scrll = window.innerHeight
+      timer = setTimeout(() => {
+        window.scrollTo(0, scrll)
+      }, 60)
+    }
+  }, [hash])
   return (
     <>
       <Layout>
         <Hero />
         {/* <Details /> */}
         {/* <VerticalCards/> */}
-        <NewVerticalCards/>
-        <BookMarks/>
+        <NewVerticalCards />
+        <BookMarks />
         {/* <Verticals /> */}
       </Layout>
     </>

@@ -2,10 +2,13 @@ import React from "react";
 import "./styles.css";
 import Blogs from "./BlogContents";
 import { useParams } from "react-router-dom";
+import styles from './blog.module.css'
+import ReactMarkdown from 'react-markdown';
+import crescentCricketClubLogo from '../../assets/crescent-cricket-club-logo.png'
 
 const Blog = () => {
   const { title } = useParams();
-
+  console.log(title)
   const blog = Blogs.find(data => data.title === title)
   const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom } = blog
   return (
@@ -18,16 +21,23 @@ const Blog = () => {
         />
       </div>
       <div className="news_container">
+        {
+          title === "Barrington Crescent Cricket Club Squad for American T20 Championship 2022" && (
+            <div style={{ textAlign: "center", marginBottom: '10px' }}>
+              <img src={crescentCricketClubLogo} alt="logo" />
+            </div>
+          )
+        }
         <h1 className="news_heading">{heading}</h1>
         <span className="news_sub_heading">{date}</span>
         {referencedFrom && (
           <div className="reference">
             <h2> Referenced From:</h2>
-            <a href={referencedFrom.link}>
-              {" "}
-              <img src={require(`../../../public/images/${referencedFrom.image}`).default}
+            <a target="_blank" rel="noreferrer" href={referencedFrom.link}>
+              {referencedFrom.text}
+              {/* <img src={require(`../../../public/images/${referencedFrom.image}`).default}
                 alt=""
-              />
+              /> */}
             </a>
           </div>
         )}
@@ -35,7 +45,10 @@ const Blog = () => {
         <div className="news_text">
           {
             intro && <>
-              <p> {intro} </p>
+              <ReactMarkdown components={{
+                p: ({ node, ...props }) => <p className={styles.p} {...props} />,
+                h2: ({ node, ...props }) => <p className={styles.h2} {...props} />,
+              }} >{intro}</ReactMarkdown>
               <br />
             </>
           }
@@ -65,16 +78,15 @@ const Blog = () => {
               return (
                 < >
                   <h4 key={index} >{item.heading}</h4>
-                  <p>{item.text}</p>
+                  <ReactMarkdown>{item.text}</ReactMarkdown>
                   <br />
                 </>
               );
             })
           }
           {heading2 && (
-            <h2
-              className="news_heading"
-              style={{ marginTop: "2rem", marginBottom: "2rem" }}
+            <h2 className="news_heading2"
+              style={{ marginTop: "2rem", marginBottom: "2rem", }}
             >
               {heading2}
             </h2>
@@ -88,7 +100,7 @@ const Blog = () => {
                 <div className="news_text_half">
                   <h4>{item.heading && item.heading}</h4>
                   <br />
-                  <p>{item.text}</p>
+                  <ReactMarkdown>{item.text}</ReactMarkdown>
                 </div>
                 <div className="news_img_half">
                   <img
@@ -111,7 +123,7 @@ const Blog = () => {
                 <div className="news_text_half">
                   <h4>{item.heading && item.heading}</h4>
                   <br />
-                  <p>{item.text}</p>
+                  <ReactMarkdown>{item.text}</ReactMarkdown>
                 </div>
               </div>
             );

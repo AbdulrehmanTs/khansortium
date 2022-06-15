@@ -28,6 +28,7 @@ import KhansortiumBlog1 from "./components/newsroom/KhansortiumBlog1";
 import AmericanTwenty20Blog from "./components/newsroom/AmericanTwenty20Blog";
 import Blog from "./components/newsroom/Blog";
 import AllBlogs from "./pages/AllBlogs";
+import Staffing from "./pages/Staffing";
 
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
@@ -133,6 +134,9 @@ function App() {
           }}
         />
 
+        <Route path="/vertical/staffing">
+         <Staffing/>
+        </Route>
         <Route path="/verticals:Id">
           <Vertical />
         </Route>

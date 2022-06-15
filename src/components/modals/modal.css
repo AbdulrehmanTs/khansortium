@@ -19,6 +19,10 @@
   .modalContainer.active {
     opacity: 1;
     pointer-events: initial;
+    overflow-y: scroll;
+  }
+  .modalContainer.active::-webkit-scrollbar{
+    display: none;
   }
   
   .modalContainer .modal {
@@ -77,6 +81,12 @@
     color: #fff;
   }
 
+  
+  .modalCloseBtn:hover{
+    border-radius: 8px;
+    background-color: #f4f5f7;
+    cursor: pointer;
+  }
  
   
   

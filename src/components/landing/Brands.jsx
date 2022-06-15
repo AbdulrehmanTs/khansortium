@@ -183,7 +183,7 @@ const Brands = () => {
                 </button>
               </Link>
  */}
-            { item.stores ? "": item.slogan[0] &&   <Link to={`/verticals${item.heading}`}>
+            { item.stores ? "": item.slogan[0] &&   <Link to={item.id ==="StaffingAndTraining" ? "/vertical/staffing":`/verticals${item.heading}`}>
                 <button className='Brands_PrimaryBtn '>
                   Read More
                 </button>

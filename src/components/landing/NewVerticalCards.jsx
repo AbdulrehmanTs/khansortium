@@ -15,20 +15,20 @@ import cardsContent from '../../assets/data/vericalcards.js'
 import { Link } from 'react-router-dom'
 
 const NewVerticalCards = () => {
-    
+
     return (
         <div id='Vertical_Cards' className="new_vertical_cards">
             <h3>Our Companies</h3>
-                <div className='new_vertical_cards_container'>
-                 
-                    <NewVerticalFilter/>
-               
-                        {cardsContent.map(card=> 
-                        
-                            <NewVerticalCard key={card.img} card={card}/>
-                    
-                        )}
-        </div>
+            <div className='new_vertical_cards_container'>
+
+                <NewVerticalFilter />
+
+                {cardsContent.map(card =>
+
+                    <NewVerticalCard key={card.img} card={card} />
+
+                )}
+            </div>
         </div>
     )
 }
