@@ -7,6 +7,7 @@ const Blogs = [
         heading2: "The following are different types of testing:",
         subHeadings: null,
         date: "18 June 2022",
+        logo: 'lifelinebiosciencesLogo.png',
         banner: "TYPES_OF_TESTING.jpg",
         referencedFrom: null,
         sections: [
@@ -57,6 +58,7 @@ const Blogs = [
         heading2: null,
         subHeadings: null,
         date: "15 June 2022",
+        logo: 'lifelinebiosciencesLogo.png',
         banner: "female-asian-doctor-at-microscope.jpg",
         referencedFrom: null,
         sections: null
@@ -97,6 +99,7 @@ const Blogs = [
         heading: "Barrington Crescent Cricket Club Squad for American T20 Championship 2022",
         carouselImage: "Cricket_banner.jpg",
         date: "13 April 2022",
+        logo: 'crescent-cricket-club-logo.png',
         banner: "t20-cricket-header-banner.png",
         intro: "The American Twenty20 Championship, also known as the USACA Twenty20 championship is an American Twenty20 cricket tournament dedicated to developing American cricket players for international competition and increasing interest in the sport in the United States. The United States of America Cricket Association is the national cricket organization supporting the competition. Beginning in 2021, the American Trophy was a weeknight leather/white-ball cricket competition conducted by CASO (Chicago All Sports Organizers) and held in Chicago, and the Barrington Crescent Cricket Club won. Following the incredible success of the first year, a new team has partnered up with the AmericanT20 brand, and 2022 promises to be a five-team battle. These five teams include Barrington Crescent Cricket Club, Chicago Players, Midwest Stars, Skokie Raiders, and Hoffman Estate Rangers.",
         sections: [{

@@ -4,13 +4,12 @@ import Blogs from "./BlogContents";
 import { useParams } from "react-router-dom";
 import styles from './blog.module.css'
 import ReactMarkdown from 'react-markdown';
-import crescentCricketClubLogo from '../../assets/crescent-cricket-club-logo.png'
 
 const Blog = () => {
   const { title } = useParams();
   console.log(title)
   const blog = Blogs.find(data => data.title === title)
-  const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom, conclusion } = blog
+  const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom, conclusion, logo } = blog
   return (
     <section>
       <div className="news_banner">
@@ -23,9 +22,9 @@ const Blog = () => {
       <div className="news_container">
         {/* shows logo if blog is about "Barrington Crescent Cricket Club" */}
         {
-          title === "Barrington Crescent Cricket Club Squad for American T20 Championship 2022" && (
+          logo && (
             <div style={{ textAlign: "center", marginBottom: '10px' }}>
-              <img src={crescentCricketClubLogo} alt="logo" />
+              <img src={require(`../../../public/images/${logo}`).default} alt="logo" />
             </div>
           )
         }
