@@ -135,7 +135,7 @@ function App() {
         />
 
         <Route path="/vertical/staffing">
-         <Staffing/>
+          <Staffing />
         </Route>
         <Route path="/verticals:Id">
           <Vertical />
@@ -181,7 +181,7 @@ function App() {
           </Layout>
         </Route>
 
-        <Route path="/blogs/:title">
+        <Route path="/blogs/:slug">
           <Layout>
             <Blog />
           </Layout>

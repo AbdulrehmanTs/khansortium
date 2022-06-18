@@ -22,7 +22,7 @@ export default function Carousel1() {
             }}
           >
             <span className="Grid2CardBadge">Blog</span>
-            <Link to={`/blogs/${item.title}`}></Link>
+            <Link to={`/blogs/${item.slug}`}></Link>
             <div className="cardTwoContent" style={{ pointerEvents: "none" }}>
               <h1>{item.title}</h1>
             </div>

@@ -6,9 +6,9 @@ import styles from './blog.module.css'
 import ReactMarkdown from 'react-markdown';
 
 const Blog = () => {
-  const { title } = useParams();
-  console.log(title)
-  const blog = Blogs.find(data => data.title === title)
+  const { slug } = useParams();
+  console.log(slug)
+  const blog = Blogs.find(data => data.slug === slug)
   const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom, conclusion, logo } = blog
   return (
     <section>

@@ -1,5 +1,6 @@
 const Blogs = [
     {
+        slug: "types-of-testing",
         title: "Types of testing",
         carouselImage: "TYPES_OF_TESTING.jpg",
         heading: "TYPES OF TESTING",
@@ -51,6 +52,7 @@ const Blogs = [
         conclusion: "To have an accurate and proper diagnosis, it is necessary to undergo various types of laboratory tests or specific tests when assessing one's health condition."
     },
     {
+        slug: 'what-is-bioscience',
         title: "What is bioscience",
         carouselImage: "what-is-biocience.jpg",
         heading: "What is bioscience?",
@@ -64,6 +66,7 @@ const Blogs = [
         sections: null
     },
     {
+        slug: 'us-mobile-phon-accessories-market-by-product-type',
         title: "U.S. Mobile Phone Accessories Market by Product Type",
         carouselImage: "U.S-Mobile-Phone-Accessories-Market-by-Product-Type.jpg",
         heading: "U.S. Mobile Phone Accessories Market by Product Type",
@@ -95,6 +98,7 @@ const Blogs = [
         ],
     },
     {
+        slug: "barrington-crescent-cricket-club-squad-for-american-t20-championship-2022",
         title: "Barrington Crescent Cricket Club Squad for American T20 Championship 2022",
         heading: "Barrington Crescent Cricket Club Squad for American T20 Championship 2022",
         carouselImage: "Cricket_banner.jpg",
@@ -135,6 +139,7 @@ const Blogs = [
         ],
     },
     {
+        slug: "exploring-the-illinois-housing-market-in-2021",
         title: "Exploring the Illinois housing market in 2021",
         heading: "Exploring the Illinois housing market in 2021",
         // heading2: "",
@@ -177,6 +182,7 @@ const Blogs = [
         ],
     },
     {
+        slug: "khansortium-is-spreading-its-wings-across-chicagoland",
         title: "Khansortium is spreading its wings across Chicagoland",
         heading: "Khansortium is spreading its wings across Chicagoland",
         heading2: "Introduction of the companies:",
