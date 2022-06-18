@@ -14,7 +14,7 @@ export default function Carousel1() {
       {
         Blogs.map((item, index) => {
           return <div key={index}
-            className="Grid2Card Grid2CardTwo"
+            className="Grid2Card Grid2CardTwo blogCarousel"
             style={{
               backgroundSize: "cover",
               backgroundPosition: "center",

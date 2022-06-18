@@ -1,34 +1,65 @@
 const Blogs = [
     {
+        title: "Types of testing",
+        carouselImage: "TYPES_OF_TESTING.jpg",
+        heading: "TYPES OF TESTING",
+        intro: "When we are sick and the doctor is unable to make a proper diagnosis, additional laboratory tests are frequently recommended. Laboratory tests are medical devices that are used to diagnose diseases or other conditions using samples of blood, urine, or other tissues or substances taken from the body. \n\n The test samples are collected and analyzed by a technician or a doctor to see if the results are within the normal range. Because what is normal varies from person to person, the tests use a range. In the analysis of the results, factors such as sex, age, race, lifestyle, and medications play a role. Laboratory tests are frequently used as part of a routine check-up to determine if your health has changed.",
+        heading2: "The following are different types of testing:",
+        subHeadings: null,
+        date: "18 June 2022",
+        banner: "TYPES_OF_TESTING.jpg",
+        referencedFrom: null,
+        sections: [
+            {
+                imageRight: true,
+                heading: "RPP Testing:",
+                text: "The respiratory pathogen panel is a molecular test that detects some of the most common pathogens' genetic material (RNA or DNA). It can detect co-infections (infections caused by more than one microbe) and microbes that traditional testing, such as culture, may miss. Some panels can also distinguish between microbe subtypes or strains. A respiratory pathogen panel's results can be obtained in as little as a few hours, as opposed to a few days with traditional testing.",
+                image: "RPP Testing.jpg",
+            },
+            {
+                imageRight: false,
+                heading: "UTI Testing:",
+                text: "A urine sample can be used to detect UTIs. Under a microscope, the urine is examined for bacteria or white blood cells, both of which are signs of infection. A urine culture may also be taken by your doctor. This is a test that looks for bacteria and yeast in the urine that could be causing a UTI. A UTI can cause blood in the urine, but it could also be the result of another urinary tract issue.",
+                image: "UTI Testing.jpg",
+            },
+            {
+                imageRight: true,
+                heading: "Stool Analysis Test:",
+                text: "A stool analysis test is a series of tests performed on a stool sample to aid in the diagnosis of digestive tract disorders. It aids in the evaluation of digestive and absorptive functions as well as the detection of opportunistic pathogens in the body. A stool sample is collected and sent to the laboratory for analysis to perform this test. The stool will then be examined for color, consistency, amount, shape, odor, and mucus presence. This will assist you in analyzing your results.",
+                image: "Stool Analysis Test.jpg",
+            },
+            {
+                imageRight: false,
+                heading: "ABR Testing:",
+                text: "An antibiotic sensitivity test can help you figure out which antibiotic will work best for your infection. The test may also aid in the discovery of an antibiotic-resistant infection's treatment.",
+                image: "ABR Testing.jpg",
+            },
+            {
+                imageRight: true,
+                heading: "Gastro Testing:",
+                text: "Gastrointestinal (GI) exams are X-ray exams that look at your esophagus, stomach, small intestine, large intestine, and rectum, among other things. Fluoroscopy is a type of X-ray that allows doctors to take video images of the organs in action.",
+                image: "Gastro Testing.jfif",
+            },
+            {
+                imageRight: false,
+                heading: "SARS-CoV-2 Testing:",
+                text: "SARS-CoV-2 is the coronavirus that causes COVID-19. COVID-19 illness appears to put older adults and people with serious underlying medical conditions like heart or lung disease or diabetes at a higher risk of developing more serious complications.",
+                image: "SARS-CoV-2 Testing.jpg",
+            },
+        ],
+        conclusion: "To have an accurate and proper diagnosis, it is necessary to undergo various types of laboratory tests or specific tests when assessing one's health condition."
+    },
+    {
         title: "What is bioscience",
         carouselImage: "what-is-biocience.jpg",
         heading: "What is bioscience?",
         intro: "Bioscience is a broad field of study and industry with a common thread: using knowledge to create biological solutions that sustain, restore, and improve the quality of life for humans, plants, and animals around the world. Bioscience has improved society's quality of life in many ways, from life-saving therapies and procedures to healthier foods and cutting-edge research. \n\n Many lives have been saved as a result of medical advancements and technologies developed in the bioscience industry, which include everything from modern lab equipment to new and highly effective medications and cures for a variety of diseases. \n\n The bioscience industry encompasses a wide range of smaller industries, ranging from pharmaceuticals and therapeutics to healthcare and life science information technology. Through extensive research and technology, each of these industries has contributed to the betterment of human life. \n\n Biosciences have broad scientific content that can lead to a variety of careers, ranging from laboratory work to more advanced positions. Graduates of the biosciences can work in academic research, pharmaceutical and diagnostic medicine, the healthcare sector, food and environmental health, and local and central government. \n\n A bioscience degree can teach you skills that will help you stand out in an increasingly competitive job market while also propelling you to academic success. You will gain strong research and presentation skills, as well as the ability to collect and analyses data effectively. As a biosciences student, you will also gain many highly transferable skills, such as the ability to work well in a team, use your initiative, and manage your time effectively – all of which are highly sought-after skills in the workplace. \n ## Conclusion: \n\n The bioscience industry is undeniably booming, with no signs of slowing down anytime soon. With increased job growth, investment, and innovation, it's safe to say that the industry is here to stay and will only help the local economy and industry grow even more.",
         heading2: null,
-        // subHeadings: [{
-        //     heading: "",
-        //     text: "",
-        // }, ],
+        subHeadings: null,
         date: "15 June 2022",
         banner: "female-asian-doctor-at-microscope.jpg",
-        // referencedFrom: {
-        //     image: "reference3.png",
-        //     text: "Allied Market Research",
-        //     link: "https://www.alliedmarketresearch.com/U-S-mobile-phone-accessories-market",
-        // },
-        // sections: [{
-        //     imageRight: true,
-        //     heading: "Smartphone usage is on the rise",
-        //     text: "Mobile phones' rapid technological development in the twenty-first century has led to their adoption as a utility, with features such as alarm clocks, task reminders, and remote control of appliances among others. The entertainment and media industry is looking into features like large touch screens, speakers, easy-to-use volume controls, voice control intelligence, and other applications for commanding and controlling the device's functions. As a result, smartphones are increasingly being used as substitutes for laptops, cameras, wristwatches, and other electronic devices. \n\n Furthermore, features such as hands-free create a demand for headsets and earphones, causing users to purchase these accessories. \n\n Furthermore, the mobile phone's fragile frame and display screen encourage users to purchase protective cases and screen guards. These protective accessories are designed and manufactured to appeal to users in terms of design and quality. As a result, as smartphone penetration rises, so does the demand for mobile accessories, resulting in market expansion.",
-        //     image: "smartphone-usage-is-on-the-rise.jpg",
-        // },
-        // {
-        //     imageRight: false,
-        //     heading: "Whole-Cell Accessories",
-        //     text: "Whole-Cell Accessories has a large selection of discounted accessories for cell phones and other electronic devices like headphones, batteries, battery cases, speakers, power banks, chargers, screen protection, and protective case, etc. You'll always find exactly what you're looking for with hundreds of options to choose from. Your nearest Whole-Cell location is only a short drive away, with multiple locations throughout the Chicagoland area. There are deals no one can match. Whole-Cell Accessories is one of the biggest accessories store networks in Illinois for the last 2 decades and have many satisfied customers.",
-        //     image: "wefixvan.jpeg",
-        // },
-        // ],
+        referencedFrom: null,
+        sections: null
     },
     {
         title: "U.S. Mobile Phone Accessories Market by Product Type",

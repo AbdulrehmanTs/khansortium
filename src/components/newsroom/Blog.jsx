@@ -10,7 +10,7 @@ const Blog = () => {
   const { title } = useParams();
   console.log(title)
   const blog = Blogs.find(data => data.title === title)
-  const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom } = blog
+  const { banner, heading, heading2, subHeadings, subHeadingsWithTitle, date, intro, sections, referencedFrom, conclusion } = blog
   return (
     <section>
       <div className="news_banner">
@@ -21,6 +21,7 @@ const Blog = () => {
         />
       </div>
       <div className="news_container">
+        {/* shows logo if blog is about "Barrington Crescent Cricket Club" */}
         {
           title === "Barrington Crescent Cricket Club Squad for American T20 Championship 2022" && (
             <div style={{ textAlign: "center", marginBottom: '10px' }}>
@@ -47,7 +48,9 @@ const Blog = () => {
             intro && <>
               <ReactMarkdown components={{
                 p: ({ node, ...props }) => <p className={styles.p} {...props} />,
-                h2: ({ node, ...props }) => <p className={styles.h2} {...props} />,
+                h2: ({ node, ...props }) => <h2 className={styles.h2} {...props} />,
+                h3: ({ node, ...props }) => <h4 className={styles.h3} {...props} />,
+                h4: ({ node, ...props }) => <h4 className={styles.h4} {...props} />,
               }} >{intro}</ReactMarkdown>
               <br />
             </>
@@ -103,10 +106,15 @@ const Blog = () => {
                   <ReactMarkdown>{item.text}</ReactMarkdown>
                 </div>
                 <div className="news_img_half">
-                  <img
-                    src={require(`../../../public/images/${item.image}`).default}
-                    alt=""
-                  />
+                  {
+                    item.image && (
+                      <img
+                        src={require(`../../../public/images/${item.image}`).default}
+                        alt=""
+                      />
+                    )
+                  }
+
                 </div>
                 <br />
               </div>
@@ -115,10 +123,14 @@ const Blog = () => {
             return (
               <div key={index} className="news_text_img_right">
                 <div className="news_img_half">
-                  <img
-                    src={require(`../../../public/images/${item.image}`).default}
-                    alt=""
-                  />
+                  {
+                    item.image && (
+                      <img
+                        src={require(`../../../public/images/${item.image}`).default}
+                        alt=""
+                      />
+                    )
+                  }
                 </div>
                 <div className="news_text_half">
                   <h4>{item.heading && item.heading}</h4>
@@ -129,6 +141,19 @@ const Blog = () => {
             );
           }
         })}
+
+        {conclusion && (
+          <>
+            <h2 className="news_heading2"
+              style={{ marginTop: "2rem", marginBottom: "2rem", }}
+            >
+              Conclusion:
+            </h2>
+            <ReactMarkdown>{conclusion}</ReactMarkdown>
+          </>
+        )
+        }
+
       </div>
     </section>
   );
