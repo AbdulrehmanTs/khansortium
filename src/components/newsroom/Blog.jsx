@@ -24,7 +24,7 @@ const Blog = () => {
         {
           logo && (
             <div style={{ textAlign: "center", marginBottom: '10px' }}>
-              <img src={require(`../../../public/images/${logo}`).default} alt="logo" />
+              <img width={"180px"} src={require(`../../../public/images/${logo}`).default} alt="logo" />
             </div>
           )
         }
